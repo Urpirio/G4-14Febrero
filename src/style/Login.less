@@ -1,0 +1,110 @@
+:root{
+    font-family: "Poppins", serif;
+}
+body{
+    margin: 0;
+}
+
+.SLogin{
+    height: 100vh;
+    width: 100vw;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .SL__Form{
+        height: 10cm;
+        width: 8cm;
+        background: #1B1B1B;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid #444444;
+        border-left-color: #de4702;
+        border-top-color: #de4702;
+        border-radius: 20px;
+        box-shadow: 1px 1px 100px 15px #ffffff1c;
+        .SL__Form_div1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: white;
+                margin: 0;
+            }
+            i{
+                font-size: 40px;
+                color: transparent;
+                border: 1px solid gray;
+                border-right-color: #de4702;
+                border-bottom-color: #de4702;
+                border-radius: 10px;
+                padding: 5px;
+                background: linear-gradient(90deg,#ffb703,#de4702,#ffb703);
+                background-clip: text;
+                background-size: 500%;
+                animation: anim2 5s linear infinite;
+                @keyframes anim2 {
+                    from{
+                        background-position: 0% 250%;
+                    }
+                    to{
+                        background-position: 250% 500%;
+                    }
+                }
+            }
+        }
+        .SL__Form_div2{
+            display: contents;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            input{
+                height: 0.7cm;
+                width: 80%;
+                border-radius: 10px;
+                border: 1px solid gray;
+                outline: none;
+                background: #292929;
+                color: white;
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+        .SL__Form_div3{
+            input{
+                height: 1cm;
+                width: 3cm;
+                border-radius: 10px;
+                border: 1px solid  #de4702;
+                background: linear-gradient(90deg,#ffb703,#de4702,#ffb703);
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 300ms;
+                background-size: 500%;
+                animation: Anim1 5s;
+                animation-iteration-count: infinite;
+                
+                &:hover{
+                    height: 1.05cm;
+                    transform: translateY(2px);
+                }
+
+            }
+        }
+    }
+}
+@keyframes Anim1 {
+    from{
+        background-position: 0% 250%;
+    }
+    to{
+        background-position:  250% 500%;
+    }
+}
