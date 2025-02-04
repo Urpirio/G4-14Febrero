@@ -10,14 +10,14 @@ export default function Login() {
         e.preventDefault()
         if(DataUser[0].Username == document.getElementById('Username').value){
             if(DataUser[0].Password == document.getElementById('Password').value){
-                window.location.pathname = '/Admin';
+                window.location.href = '/Admin';
                 
             }else{
 
             }
         }else if(DataUser[1].Username == document.getElementById('Username').value){
             if(DataUser[1].Password == document.getElementById('Password').value){
-                window.location.pathname = '/Nashla';
+                window.location.href = '/Nashla';
             }else{
 
             }
