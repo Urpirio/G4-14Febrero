@@ -12,7 +12,7 @@
         Password: '1965',
     },
     {
-        Username: 'Enmanuel',
+        Username: 'Emmanuel',
         Password: 'Batuce',
     },
     {
