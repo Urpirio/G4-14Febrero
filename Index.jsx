@@ -22,7 +22,7 @@ const routes = createBrowserRouter(
             element: <Nelson/>
         },
         {
-            path: '/Nashla',
+            path: '/Nashla.html',
             element: <Nashla/>
         }
     ]

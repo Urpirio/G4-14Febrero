@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/Login.less';
 import DataUser from '../Data/Data';
+import { Link } from 'react-router';
 
 export let Username;
 export default function Login() {
@@ -17,7 +18,7 @@ export default function Login() {
             }
         }else if(DataUser[1].Username == document.getElementById('Username').value){
             if(DataUser[1].Password == document.getElementById('Password').value){
-                window.location.href = '/Nashla';
+                window.location.href = '/Nashla.html';
             }else{
 
             }

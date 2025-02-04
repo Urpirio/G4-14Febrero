@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import '../style/GroupStudent.less';
 import Cartas from './Cartas/Cartas';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
 export default function Nashla() {
 
@@ -22,3 +24,8 @@ export default function Nashla() {
     </section>
   )
 }
+createRoot(document.getElementById("root")).render(
+    <StrictMode>
+        <Nashla/>
+    </StrictMode>
+);
