@@ -14,7 +14,7 @@ const routes = createBrowserRouter(
             element: <Login/>
         },
         {
-            path: "/Admin",
+            path: "https://g4-14-febrero.vercel.app/Admin",
             element: <Admin/>
         },
         {
