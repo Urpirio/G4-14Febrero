@@ -24,16 +24,41 @@ export default function Login() {
                     document.getElementById('GroupStudent').style.display = 'none';
                     document.getElementById('SCartas').style.display = 'flex';
 
-                    document.getElementById('SCartas').innerHTML = ` <div >
+
+                
+                    
+
+                    document.getElementById('SCartas').innerHTML = ` <div id = 'SCartas__div' >
             <h2>${document.getElementById('Username').value}</h2>
             <p>Aprecio profundamente tu paciencia y la manera en que has compartido tu experiencia conmigo. Me has mostrado que la verdadera enseñanza va más allá de los conocimientos; se trata de inspirar y motivar</p>
-                   </div>`
+                   </div>`;
+                   let Btn = document.createElement('button');
+                   Btn.className = 'Btncerrar';
+                   let b = document.createTextNode('Cerrar sesion');
+                   Btn.append(b);
+                   Btn.addEventListener('click',()=>{
+                       window.location.href = 'https://g4-14-febrero.vercel.app/';
+                   })
+                   
+                   document.getElementById('SCartas__div').append(Btn);
+
+
                 });
+
+              
+                    
+
+
+
+                
+
+
 
 
                 let T = document.createTextNode('Ver Carta');
                 D.append(T)
                 document.getElementById('GroupStudent').append(D);
+                document.getElementById('SCartas__div').append(Btn);
                 
             }else{
 
