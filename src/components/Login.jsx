@@ -4,8 +4,8 @@ import DataUser from '../Data/Data';
 import '../style/GroupStudent.less';
 
 export let Username;
-export default function Login() {
 
+export default function Login() {
 
     const ConfirmID = (e) =>{
         e.preventDefault()
@@ -23,7 +23,7 @@ export default function Login() {
 
                     document.getElementById('GroupStudent').style.display = 'none';
                     document.getElementById('SCartas').style.display = 'flex';
-
+                   
 
                 
                     
@@ -73,40 +73,22 @@ export default function Login() {
 
                 let D = document.createElement('button')
                 D.className = 'btnContinuar';
-
                 D.addEventListener('click',()=>{
-
                     document.getElementById('GroupStudent').style.display = 'none';
-                    document.getElementById('SCartas').style.display = 'flex';
-
-                    document.getElementById('SCartas').innerHTML = ` <div id = 'SCartas__div'>
-                   </div>`;
-                   let form1 = document.createElement('form');
-                   form1.className = 'SCartas_Pregunta1';
-                   form1.addEventListener('acc',()=>{
-                   });
-                   form1.action = '';
-                   document.getElementById('SCartas__div').append(form1);
-                   let Pregunta1 = document.createElement('label');
-                   let TextPregunta1 = document.createTextNode('¿Qué te atrae más en una persona?');
-                   Pregunta1.append(TextPregunta1);
-                   form1.append(Pregunta1);
-                   let Mensaje = document.createElement('input');
-                   Mensaje.placeholder = 'Repuesta';
-                   form1.append(Mensaje);
-                   let BtnEnviar1 = document.createElement('button');
-                   let TextEnviar = document.createTextNode('Enviar');
-
-
-
-                   BtnEnviar1.append(TextEnviar);
-                   BtnEnviar1.setAttribute('type','submit')
-                   BtnEnviar1.addEventListener('click',()=>{
+                    document.getElementById('SCartas').style.display = 'none';
+                    document.getElementById('SLogin').style.background = '#FEFEFE'
+                    document.getElementById('SLogin').innerHTML += `<section id='Nashla'></section>`;
+                    let NalaElement = document.getElementById('Nashla');
+                    let NalaImg = document.createElement('img');
+                    NalaImg.className = 'NalaImg';
+                    NalaImg.src = 'https://cdn-images.dzcdn.net/images/artist/93a458fff3ae7f831fe78fcc47cc5e15/1900x1900-000000-80-0-0.jpg';
+                    NalaElement.append(NalaImg);
+                    let GojoWord = document.createElement('h3');
+                    let GojoF = document.createTextNode('Si sigues leyendo, no hay vuelta atrás... Espero que estés lista');
+                    GojoWord.append(GojoF);
+                    NalaElement.append(GojoWord);
+                    
                    
-                   })
-
-                   
-                   form1.append(BtnEnviar1);
                    
                 });
 
@@ -654,7 +636,7 @@ export default function Login() {
 
 
   return (
-    <section className='SLogin'>
+    <section className='SLogin' id='SLogin'>
         <form className='SL__Form' id='SL__Form' onSubmit={ConfirmID}>
             <div className='SL__Form_div1'>
             <i >❤️</i> 
@@ -673,7 +655,7 @@ export default function Login() {
          <section className='GroupStudent' id='GroupStudent' >
                 
         </section>
-        <section className='SCartas' id='SCartas'>
+        <section className={`SCartas`} id='SCartas'>
          
     </section>
 
