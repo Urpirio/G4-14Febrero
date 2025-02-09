@@ -84,9 +84,39 @@ export default function Login() {
                     NalaImg.src = 'https://cdn-images.dzcdn.net/images/artist/93a458fff3ae7f831fe78fcc47cc5e15/1900x1900-000000-80-0-0.jpg';
                     NalaElement.append(NalaImg);
                     let GojoWord = document.createElement('h3');
-                    let GojoF = document.createTextNode('Si sigues leyendo, no hay vuelta atrás... Espero que estés lista');
+                    let GojoF = document.createTextNode('Estas segura de que deseas continuar.');
                     GojoWord.append(GojoF);
                     NalaElement.append(GojoWord);
+                    let Btnconteiner = document.createElement('div');
+                    Btnconteiner.className = 'Btnconteiner';
+                    let BtnNalaContinua = document.createElement('button');
+                    BtnNalaContinua.addEventListener('click',()=>{
+
+                    });
+                    BtnNalaContinua.className = 'BtnNalaContinua';
+                    let BtnNalaNoContinua = document.createElement('button');
+                    BtnNalaNoContinua.addEventListener('click',()=>{
+                        window.location.href = 'https://g4-14-febrero.vercel.app/';
+                    });
+                    let TextNala = document.createTextNode('Continuar');
+                    let TextNalaNo = document.createTextNode('Cerrar Sesion');
+                    BtnNalaContinua.append(TextNala);
+                    BtnNalaNoContinua.append(TextNalaNo);
+
+                    BtnNalaNoContinua.addEventListener('click',()=>{
+                        GojoWord.innerHTML = `Eso es todo,  Adiosss`;
+                        setTimeout(n(),5000)
+                        const n = () =>{
+                                window.location.href = 'https://g4-14-febrero.vercel.app/';
+                        };
+                    });
+
+                    Btnconteiner.append(BtnNalaNoContinua);
+                    Btnconteiner.append(BtnNalaContinua);
+
+                    NalaElement.append(Btnconteiner);
+                    
+                    
                     
                    
                    

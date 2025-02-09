@@ -78,7 +78,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     .NalaImg{
         height: 100px;
+
+    }
+    h3{
+        animation: NalaDialogs 2s;
+    }
+    .Btnconteiner{
+        display: flex;
+        gap: 20px;
+        button{
+            height: 0.8cm;
+            width: 3cm;
+            border: 1px solid rgba(0, 0, 0, 0.242);
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            background: white;
+            color: #484848;
+        }
+        .BtnNalaContinua{
+            background: gray;
+            color: white;
+        }
+    }
+}
+@keyframes NalaDialogs {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
