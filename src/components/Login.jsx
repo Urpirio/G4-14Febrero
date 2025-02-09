@@ -105,10 +105,10 @@ export default function Login() {
 
                     BtnNalaNoContinua.addEventListener('click',()=>{
                         GojoWord.innerHTML = `Eso es todo,  Adiosss`;
-                        setTimeout(n(),5000)
-                        const n = () =>{
-                                window.location.href = 'https://g4-14-febrero.vercel.app/';
-                        };
+                        setTimeout(()=>{
+                            window.location.href = 'https://g4-14-febrero.vercel.app/';
+                        },10000)
+                        
                     });
 
                     Btnconteiner.append(BtnNalaNoContinua);
