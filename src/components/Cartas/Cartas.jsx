@@ -8,6 +8,7 @@ export default function (props) {
             <h2>{props.name}</h2>
             <p>{props.carta}</p>
         </div>
+        <button type="submit"></button>
         
     </section>
   )
