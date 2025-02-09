@@ -92,17 +92,7 @@ export default function Login() {
                     let BtnNalaContinua = document.createElement('button');
                     
                     
-                    BtnNalaContinua.addEventListener('click',()=>{
-                        GojoWord.innerHTML = ``;
-
-
-
-
-
-
-
-
-                    });
+                    
 
 
 
@@ -122,8 +112,41 @@ export default function Login() {
                         BtnNalaContinua.remove();
                         setTimeout(()=>{
                             window.location.href = 'https://g4-14-febrero.vercel.app/';
-                        },3000)
+                        },3000);
                         
+                    });
+                    BtnNalaContinua.addEventListener('click',()=>{
+                        BtnNalaNoContinua.remove();
+                        BtnNalaContinua.remove();
+                        NalaImg.remove();
+                        GojoWord.remove();
+
+                        let CoraNala = document.createElement('img');
+                        CoraNala.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png';
+                        CoraNala.className = 'CoraNala';
+
+                        let animacion;
+                        setInterval(()=>{
+                            if (animacion == undefined){
+                                CoraNala.style.animation = 'Cora1 5s infinite';
+                                animacion = 1;
+                               
+                            }else{
+                                animacion = undefined;
+                                CoraNala.style.animation = 'Cora2 5s infinite';
+                            };
+                        },5000);
+
+                        NalaElement.append(CoraNala);
+
+
+
+
+
+
+
+
+
                     });
 
                     Btnconteiner.append(BtnNalaNoContinua);
