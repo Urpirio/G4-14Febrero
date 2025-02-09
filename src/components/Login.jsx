@@ -128,14 +128,16 @@ export default function Login() {
                         let animacion;
                         setInterval(()=>{
                             if (animacion == undefined){
-                                CoraNala.style.animation = 'Cora1 5s infinite';
                                 animacion = 1;
+                                CoraNala.style.animation = 'Cora2 1s infinite';
                                
                             }else{
-                                animacion = undefined;
-                                CoraNala.style.animation = 'Cora2 5s infinite';
+                                animacion = undefined ;
+                                CoraNala.style.animation = 'Cora1 1s infinite';
+                                
+                                
                             };
-                        },5000);
+                        },1000);
 
                         NalaElement.append(CoraNala);
 
