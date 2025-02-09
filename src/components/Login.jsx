@@ -90,21 +90,39 @@ export default function Login() {
                     let Btnconteiner = document.createElement('div');
                     Btnconteiner.className = 'Btnconteiner';
                     let BtnNalaContinua = document.createElement('button');
+                    
+                    
                     BtnNalaContinua.addEventListener('click',()=>{
+                        GojoWord.innerHTML = ``;
+
+
+
+
+
+
+
 
                     });
+
+
+
                     BtnNalaContinua.className = 'BtnNalaContinua';
+                    BtnNalaContinua.id ='BtnNalaContinua';
                     let BtnNalaNoContinua = document.createElement('button');
-                    let TextNala = document.createTextNode('Continuar');
-                    let TextNalaNo = document.createTextNode('Cerrar Sesion');
+                    BtnNalaNoContinua.className = 'BtnNalaNoContinua';
+                    BtnNalaNoContinua.id = 'BtnNalaNoContinua';
+                    let TextNala = document.createTextNode('Si');
+                    let TextNalaNo = document.createTextNode('No');
                     BtnNalaContinua.append(TextNala);
                     BtnNalaNoContinua.append(TextNalaNo);
 
                     BtnNalaNoContinua.addEventListener('click',()=>{
                         GojoWord.innerHTML = `Eso es todo,  Adiosss`;
+                        BtnNalaNoContinua.remove();
+                        BtnNalaContinua.remove();
                         setTimeout(()=>{
                             window.location.href = 'https://g4-14-febrero.vercel.app/';
-                        },10000)
+                        },3000)
                         
                     });
 
