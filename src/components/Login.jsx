@@ -95,9 +95,6 @@ export default function Login() {
                     });
                     BtnNalaContinua.className = 'BtnNalaContinua';
                     let BtnNalaNoContinua = document.createElement('button');
-                    BtnNalaNoContinua.addEventListener('click',()=>{
-                        window.location.href = 'https://g4-14-febrero.vercel.app/';
-                    });
                     let TextNala = document.createTextNode('Continuar');
                     let TextNalaNo = document.createTextNode('Cerrar Sesion');
                     BtnNalaContinua.append(TextNala);
