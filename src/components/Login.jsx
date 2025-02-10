@@ -139,17 +139,42 @@ export default function Login() {
                         },1000);
 
                         NalaElement.append(CoraNala);
+                        let change;
                         CoraNala.addEventListener('click',()=>{
-                            let Buscame = document.createElement('h3');
-                            let TextBuscame = document.createTextNode('Antes de seguir, Búscame. Asegúrate de que estoy justo frente a ti. Si lo estás, y solo si lo estás… entonces lee la carta.')
+                            if(change== undefined){
+                                var Buscame = document.createElement('h3');
+                            var TextBuscame = document.createTextNode('Antes de seguir, Búscame. Asegúrate de que estoy justo frente a ti. Si lo estás, y solo si lo estás… entonces lee la carta.')
                             Buscame.append(TextBuscame);
                             NalaElement.append(Buscame);
-                            let BtnListo = document.createElement('button');
+                            var BtnListo = document.createElement('button');
                             BtnListo.className = 'BtnListo';
                             let TextListo = document.createTextNode('Leer');
                             BtnListo.append(TextListo);
                             NalaElement.append(BtnListo);
+                            change = 1;
+                            }else{
 
+                            };
+
+                            BtnListo.addEventListener('click',()=>{
+                                Buscame.remove();
+                                TextBuscame.remove();
+                                CoraNala.remove();
+                                BtnListo.remove();
+                                let Carta = document.createElement('div');
+                                let CartaContent = document.createElement('p');
+                                let CartaAtt = document.createElement('span');
+                                let TextCartaContent = document.createTextNode('El renacuajo nadaba ágilmente entre las rocas cubiertas de musgo, mientras un leve zumbido de abejas resonaba en el aire. El cielo nebuloso anunciaba una lluvia inminente, pero el aroma de albahaca recién cortada se mezclaba con la brisa, creando una sensación de calma. En la orilla, una vieja espátula olvidada yacía entre la arena, testigo de alguna travesía efímera. A lo lejos, el brillo cobalto del mar contrastaba con el fulgor dorado del sol poniente, dibujando un paisaje digno de una quimera.');
+                                let TextCartaAtt = document.createTextNode('Att: Urpirio');
+                                CartaContent.append(TextCartaContent);
+                                CartaAtt.append(TextCartaAtt);
+                                Carta.append(CartaContent);
+                                Carta.append(CartaAtt);
+                                NalaElement.append(Carta)
+
+                            
+                            
+                            })
 
                         });
 
@@ -722,7 +747,7 @@ export default function Login() {
     <section className='SLogin' id='SLogin'>
         <form className='SL__Form' id='SL__Form' onSubmit={ConfirmID}>
             <div className='SL__Form_div1'>
-            <i >❤️</i> 
+            <i class='bx bxs-heart'></i>
                 <h2>San Valentín</h2>
             </div>
             <div className='SL__Form_div2'>
