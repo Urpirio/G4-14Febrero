@@ -120,6 +120,7 @@ export default function Login() {
                         BtnNalaContinua.remove();
                         NalaImg.remove();
                         GojoWord.remove();
+                        Btnconteiner.remove();
 
                         let CoraNala = document.createElement('img');
                         CoraNala.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png';
@@ -134,12 +135,24 @@ export default function Login() {
                             }else{
                                 animacion = undefined ;
                                 CoraNala.style.animation = 'Cora1 1s infinite';
-                                
-                                
                             };
                         },1000);
 
                         NalaElement.append(CoraNala);
+                        CoraNala.addEventListener('click',()=>{
+                            let Buscame = document.createElement('h3');
+                            let TextBuscame = document.createTextNode('Antes de seguir, Búscame. Asegúrate de que estoy justo frente a ti. Si lo estás, y solo si lo estás… entonces lee la carta. Pero prepárate, porque algunas cosas no pueden ser desleídas.')
+                            Buscame.append(TextBuscame);
+                            NalaElement.append(Buscame);
+                            let BtnListo = document.createElement('button');
+                            BtnListo.className = 'BtnListo';
+                            let TextListo = document.createTextNode('Leer');
+                            BtnListo.append(TextListo);
+                            NalaElement.append(BtnListo);
+
+
+                        });
+
 
 
 
