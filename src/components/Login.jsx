@@ -69,7 +69,7 @@ export default function Login() {
                 document.getElementById('SL__Form').style.display = 'none';
                 document.getElementById('GroupStudent').style.display = 'flex';
                 document.getElementById('GroupStudent').innerHTML = `<h1 class = 'GSwelcome'>
-                 Bienvenida <span>${document.getElementById('Username').value}</span> a <span>G4</span></h1>`;
+                 Bienvenida <span>Nashla</span> a <span>G4-14F</span></h1>`;
 
                 let D = document.createElement('button')
                 D.className = 'btnContinuar';
@@ -162,15 +162,16 @@ export default function Login() {
                                 CoraNala.remove();
                                 BtnListo.remove();
                                 let Carta = document.createElement('div');
-                                let CartaContent = document.createElement('p');
+                                let CartaContent = document.createElement('p'); 
                                 let CartaAtt = document.createElement('span');
-                                let TextCartaContent = document.createTextNode('El renacuajo nadaba ágilmente entre las rocas cubiertas de musgo, mientras un leve zumbido de abejas resonaba en el aire. El cielo nebuloso anunciaba una lluvia inminente, pero el aroma de albahaca recién cortada se mezclaba con la brisa, creando una sensación de calma. En la orilla, una vieja espátula olvidada yacía entre la arena, testigo de alguna travesía efímera. A lo lejos, el brillo cobalto del mar contrastaba con el fulgor dorado del sol poniente, dibujando un paisaje digno de una quimera.');
+                                let TextCartaContent = document.createTextNode('Desde hace tiempo me he dado cuenta de que significas mucho para mí. No sé exactamente cuándo empezó, pero de repente comprendí que no era solo admiración o cariño… te quiero, y mucho. Y no de una forma amistosa, sino de una manera más profunda, más romántica. Admiro tu forma de ser, lo fuerte y capaz que eres para enfrentar cualquier situación. Me encanta lo espontánea y auténtica que eres, la manera en que haces que todo a tu alrededor sea más interesante. No sé qué pensarás de esto, pero quería decirlo con total sinceridad. Me gustas, de verdad, y quiero saber si estarías dispuesta a construir algo bonito conmigo.');
                                 let TextCartaAtt = document.createTextNode('Att: Urpirio');
                                 CartaContent.append(TextCartaContent);
                                 CartaAtt.append(TextCartaAtt);
                                 Carta.append(CartaContent);
                                 Carta.append(CartaAtt);
-                                NalaElement.append(Carta)
+                                NalaElement.append(Carta);
+                                let BtnContinuar= document.createElement('button');
 
                             
                             
