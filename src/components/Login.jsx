@@ -141,7 +141,7 @@ export default function Login() {
                         NalaElement.append(CoraNala);
                         CoraNala.addEventListener('click',()=>{
                             let Buscame = document.createElement('h3');
-                            let TextBuscame = document.createTextNode('Antes de seguir, Búscame. Asegúrate de que estoy justo frente a ti. Si lo estás, y solo si lo estás… entonces lee la carta. Pero prepárate, porque algunas cosas no pueden ser desleídas.')
+                            let TextBuscame = document.createTextNode('Antes de seguir, Búscame. Asegúrate de que estoy justo frente a ti. Si lo estás, y solo si lo estás… entonces lee la carta.')
                             Buscame.append(TextBuscame);
                             NalaElement.append(Buscame);
                             let BtnListo = document.createElement('button');
