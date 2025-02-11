@@ -29,7 +29,7 @@
     },
     {
         Username: 'PedroAmin',
-        Password: '1234',
+        Password: 'negro',
     },
     {
         Username: 'Ronald',
@@ -37,11 +37,11 @@
     },
     {
         Username: 'Yohandy',
-        Password: 'ENVELDA',
+        Password: 'Envelda',
     },
     {
         Username: 'Yerlina',
-        Password: 'MataPedros',
+        Password: 'matapedros',
     },
     {
         Username: 'Oliver',
@@ -73,7 +73,7 @@
     },
     {
         Username: 'Diego',
-        Password: '2121',
+        Password: 'brazo',
     },
     {
         Username: 'Wander',
