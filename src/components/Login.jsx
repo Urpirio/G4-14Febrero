@@ -162,7 +162,7 @@ export default function Login() {
                                 CoraNala.remove();
                                 BtnListo.remove();
                                 NalaElement.innerHTML +=`<div class = 'NashlaCarta'>
-                                <b>Para Nashla, alguien simplemente única</b><br><br>
+                                <b>Para Nashla Sena, alguien simplemente única❤️</b><br><br>
 
 Nashla, si me hubieran dicho el primer día que te vi que algún día escribiría esta carta, probablemente me habría reído. Nunca imaginé que llegaríamos a ser tan cercanos, mucho menos que llegaría a sentir algo tan especial por ti. Es extraño pensar en cómo solía verte antes y en lo diferente que es todo ahora. <br><br>
 
