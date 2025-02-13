@@ -161,16 +161,27 @@ export default function Login() {
                                 TextBuscame.remove();
                                 CoraNala.remove();
                                 BtnListo.remove();
-                                let Carta = document.createElement('div');
-                                let CartaContent = document.createElement('p'); 
-                                let CartaAtt = document.createElement('span');
-                                let TextCartaContent = document.createTextNode('Desde hace tiempo me he dado cuenta de que significas mucho para mí. No sé exactamente cuándo empezó, pero de repente comprendí que no era solo admiración o cariño… te quiero, y mucho. Y no de una forma amistosa, sino de una manera más profunda, más romántica. Admiro tu forma de ser, lo fuerte y capaz que eres para enfrentar cualquier situación. Me encanta lo espontánea y auténtica que eres, la manera en que haces que todo a tu alrededor sea más interesante. No sé qué pensarás de esto, pero quería decirlo con total sinceridad. Me gustas, de verdad, y quiero saber si estarías dispuesta a construir algo bonito conmigo.');
-                                let TextCartaAtt = document.createTextNode('Att: Urpirio');
-                                CartaContent.append(TextCartaContent);
-                                CartaAtt.append(TextCartaAtt);
-                                Carta.append(CartaContent);
-                                Carta.append(CartaAtt);
-                                NalaElement.append(Carta);
+                                NalaElement.innerHTML +=`<div class = 'NashlaCarta'>
+                                <b>Para Nashla, alguien simplemente única</b><br><br>
+
+Nashla, si me hubieran dicho el primer día que te vi que algún día escribiría esta carta, probablemente me habría reído. Nunca imaginé que llegaríamos a ser tan cercanos, mucho menos que llegaría a sentir algo tan especial por ti. Es extraño pensar en cómo solía verte antes y en lo diferente que es todo ahora. <br><br>
+
+Siempre supe que eras inteligente, ingeniosa y capaz de muchas cosas, pero con el tiempo, al hablar más contigo, me di cuenta de que hay mucho más en ti. Me sorprendieron tus medallas en ajedrez, tu amor por el anime, y hasta esa forma juguetona que tienes de ser, aunque sabes perfectamente cuándo ponerte seria. Admiro tu determinación, tu claridad al saber lo que quieres y tu manera de buscarlo hasta conseguirlo. Esas son cualidades que no todos tienen, y son parte de lo que te hace única. <br><br>
+
+Trabajar en equipo contigo es como completar la otra mitad. Cuando lo hacemos, siento más seguridad, como si supiera que las posibilidades de fallar fueran menores. De alguna manera, me complementas. Hay cosas en ti que admiro porque yo no las tengo, y verte ser así me inspira.<br><br>
+
+A lo largo del tiempo, sin darme cuenta, empecé a verte de otra manera. No sé en qué momento exacto pasó, pero pasó. Y ahora, simplemente lo sé: estoy enamorado de ti. Me encanta cuando te haces rizos, ese olor tan intenso que siento cada mañana cuando te acercas, y hasta esa manera en que a veces quieres romper la computadora cuando el código no compila. Admiro el esfuerzo que pones en entenderlo todo, la pasión que le pones a la programación, y ni hablar de la música. Desde el momento en que supe que tocabas el saxofón y otros instrumentos de viento, fue algo que me atrapó aún más.<br><br>
+
+Sé que probablemente ya has escuchado que me gustas, y sí, es completamente cierto. Me encantaría construir algo bonito contigo, conocerte más y seguir compartiendo momentos. Es por eso hoy viernes 14 de febrero quiero decirte todo esto en persona. Sí, sé que no es la idea más original declararse este día, pero no encontré otro momento que se sintiera tan significativo para hacerlo.<br><br>
+
+No sé cuál será tu respuesta, pero pase lo que pase, quiero que sepas que seguiré queriéndote, respetándote y apoyándote como hasta ahora. Eres alguien increíble, y eso no cambiará.<br><br>
+
+Ah, y aunque todavía no entiendo cómo alguien puede no gustarle el aguacate ni cómo puedes ser tan mañosa con la comida… se te quiere y se te ama tal y como eres.<br><br>
+
+Con cariño,
+Urpirio Junior
+                                </div>`;
+                               
                                 let BtnContinuar= document.createElement('button');
 
                             
