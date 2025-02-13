@@ -32,21 +32,24 @@
 }
 .SCartas{
     display: none;
-    color: gray;
+    color: black;
     justify-content: center;
     align-items: center;
-    background: #caf0f8;
+    background: none;
     width: 90%;
     padding: 10px;
     border-radius: 20px;
-    border: 2px solid #023047;
+    @media (max-width:667px) {
+        margin-top: 10cm;
+    }
     h2{
         color: #023047;
         margin: 0;
         text-align: center;
     }
     p{
-        text-align: center;
+        
+        text-align: left;
         font-weight: 500;
     }
 }

@@ -56,12 +56,12 @@
         Password: 'Bandido',
     },
     {
-        Username: 'Dionveny',
+        Username: 'Dioveny',
         Password: 'Eldio',
     },
     {
         Username: 'Genesis',
-        Password: '0011',
+        Password: 'pasola',
     },
     {
         Username: 'Johan',
@@ -82,7 +82,7 @@
     {
         Username: 'Smell',
         Password: '0124',
-    }
+    },
 
 ];
 export default DataUser;
