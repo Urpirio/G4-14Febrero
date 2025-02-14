@@ -895,14 +895,40 @@ Wander, eres un amor de persona, un trabajador incansable y alguien que vive con
             }else{
                 document.getElementById('ErrorPassword').style.display = 'flex';
             }
-        }else{
-            document.getElementById('ErrorUser').style.display = 'flex'
-        };
+        }else if(DataUser[20].Username == document.getElementById('Username').value){
+            if(DataUser[20].Password == document.getElementById('Password').value){
+                document.getElementById('SL__Form').style.display = 'none';
+                document.getElementById('GroupStudent').style.display = 'flex';
+                document.getElementById('GroupStudent').innerHTML = `<h1 class = 'GSwelcome'>
+                Smell,<span> el que sorprende en silencio</span></h1>`;
+
+                let D = document.createElement('button')
+                let t = document.getElementById('GroupStudent')
+                D.className = 'btnContinuar';
+                t.append(D);
+
+                D.addEventListener('click',()=>{
+
+                    document.getElementById('GroupStudent').style.display = 'none';
+                    document.getElementById('SCartas').style.display = 'flex';
+
+                    document.getElementById('SCartas').innerHTML = ` <div >
+
+            <p>La verdad, al inicio no sabía qué pensar de ti. Sinceramente, fuiste una de las personas más inesperadas en este grupo. Pensé que eras un vago, alguien que solo buscaba existir sin esforzarse demasiado. Pero luego, con el tiempo, se hizo evidente tu talento.<br><br>
+
+Frente a mis ojos, pasaste de ser "el que no hace nada" a la persona que, en silencio, hace muchísimo. No buscas aprobación de nadie, solo la tuya, y eso te hace alguien increíblemente seguro de sí mismo. En un momento llegué a pensar que eras muy tímido, pero con el tiempo entendí que simplemente eres reservado, que tienes un círculo cerrado y que seleccionas con cuidado a las personas que dejas entrar en tu vida.
+
+Sinceramente, te admiro mucho. Tienes una forma única de ser y un talento que no necesita grandes demostraciones para ser evidente. Sigue así, siendo fiel a ti mismo.</p>
+                   </div>`
+                });
+        }
         
         
         
-        
-    };
+    }else{
+        document.getElementById('ErrorUser').style.display = 'flex';
+    }
+};
 
 
 
