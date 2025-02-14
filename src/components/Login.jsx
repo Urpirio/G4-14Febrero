@@ -801,12 +801,12 @@ Con mucho respeto y gratitud, Urpirio</p>
             }else{
 
             }
-        }else if(DataUser[18].Username == document.getElementById('Username').value){
+        }else if(DataUser[18].Username == document.getElementById('Username').value){//Diego
             if(DataUser[18].Password == document.getElementById('Password').value){
                 document.getElementById('SL__Form').style.display = 'none';
                 document.getElementById('GroupStudent').style.display = 'flex';
                 document.getElementById('GroupStudent').innerHTML = `<h1 class = 'GSwelcome'>
-                 Welcome <span>${document.getElementById('Username').value}</span> to <span>G4</span></h1>`;
+                 Diego, <span>el maestro que me inspiró</span></h1>`;
 
                 let D = document.createElement('button')
                 D.className = 'btnContinuar';
@@ -817,8 +817,15 @@ Con mucho respeto y gratitud, Urpirio</p>
                     document.getElementById('SCartas').style.display = 'flex';
 
                     document.getElementById('SCartas').innerHTML = ` <div >
-            <h2>${document.getElementById('Username').value}</h2>
-            <p>Aprecio profundamente tu paciencia y la manera en que has compartido tu experiencia conmigo. Me has mostrado que la verdadera enseñanza va más allá de los conocimientos; se trata de inspirar y motivar</p>
+            <p>La primera vez que entraste al aula y mencionaste que venías del ITLA, recién ingresado, me sorprendí bastante. Para mí, el mundo de la programación era algo que conocía, pero a la vez desconocía, así que lo veía como algo relativamente nuevo. Desde ese momento, sin darme cuenta, comencé a admirarte y a sentirme inspirado para aprender.<br><br>
+
+Conforme avanzaba el programa, noté tu gran pasión por la enseñanza. No te conformabas con que simplemente aprendiéramos, sino que querías que realmente entendiéramos la lógica de la programación y pudiéramos resolver problemas complejos. Desde el inicio, pusiste muchísimo empeño en cada clase y cariño en todo lo que hacías, y eso se notaba. Tu dedicación fue clave para motivarme a superar mis propios límites.<br><br>
+
+Aunque suene increíble, muchas de las cosas que sé ahora las aprendí gracias a ti. La lógica de programación, el pensamiento analítico y gran parte del amor que siento por esta área surgieron de tus enseñanzas. Y sé que no soy el único; dentro del grupo 4, hay más de uno que fue motivado por tu forma de enseñar. No solo explicas bien, sino que también sabes cómo conectar con tus alumnos y hacer que crean en sí mismos, y eso vale oro.<br><br>
+
+Ahora, hablemos del Diego fuera del CTC. Es otra persona, pero sin perder su esencia. Si en el aula eres apasionado y entregado, fuera de clase eres aún más dinámico y auténtico. Eres súper amigable, sincero y honesto, con chistes que a veces dan risa… y otras veces, bueno, simplemente no, jaja. Tu vibra es tan única que a veces ni pareces un maestro en el sentido tradicional, pero justo eso es lo que te hace especial.<br><br>
+
+Gracias, Diego, por inspirarme y por ayudarme a ver la programación con otros ojos.</p>
                    </div>`
                 });
 
@@ -830,12 +837,12 @@ Con mucho respeto y gratitud, Urpirio</p>
             }else{
 
             }
-        }else if(DataUser[19].Username == document.getElementById('Username').value){
+        }else if(DataUser[19].Username == document.getElementById('Username').value){//wander
             if(DataUser[19].Password == document.getElementById('Password').value){
                 document.getElementById('SL__Form').style.display = 'none';
                 document.getElementById('GroupStudent').style.display = 'flex';
                 document.getElementById('GroupStudent').innerHTML = `<h1 class = 'GSwelcome'>
-                 Welcome <span>${document.getElementById('Username').value}</span> to <span>G4</span></h1>`;
+                 Wander, <span>un amigo admirable</span></h1>`;
 
                 let D = document.createElement('button')
                 D.className = 'btnContinuar';
@@ -846,8 +853,18 @@ Con mucho respeto y gratitud, Urpirio</p>
                     document.getElementById('SCartas').style.display = 'flex';
 
                     document.getElementById('SCartas').innerHTML = ` <div >
-            <h2>${document.getElementById('Username').value}</h2>
-            <p>Aprecio profundamente tu paciencia y la manera en que has compartido tu experiencia conmigo. Me has mostrado que la verdadera enseñanza va más allá de los conocimientos; se trata de inspirar y motivar</p>
+
+            <p>Eres una de las personas más genuinas y sinceras que conozco. Tu dedicación y esfuerzo para salir adelante no tienen comparación, y aunque tú digas lo contrario, eres increíblemente disciplinado e inteligente. La pasión que sientes por la arquitectura es admirable, siempre te entregas al máximo, incluso cuando la universidad te está llevando al límite.<br><br>
+
+(¡Y sobre el pin de Jake el Perro de Hora de Aventura! Lo sé, lo sé, no te lo voy a robar, pero es tan lindo y lo quiero un montón. Perdón, pensamientos intrusivos jaja).<br><br>
+
+Pero en serio, te respeto y admiro muchísimo. Tu perseverancia y la forma en que siempre encuentras soluciones a cualquier desafío son impresionantes. A veces dices que te golpeo, pero para mí son solo abrazos y saludos llenos de cariño. Te quiero un montón, de verdad, eres una persona increíblemente amorosa y solidaria.<br><br>
+
+Es cierto que, en ocasiones, te cruzan los cables y te da un poco de paciencia, pero eso es solo porque estás agotado o porque el sueño te está venciendo. Si fuera por ti, nunca dejarías de ir al gym, pero sé que el tiempo y el cansancio no perdonan.<br><br>
+
+Y, por supuesto, no puedo dejar de decir que te pareces a Finn el Humano, solo que con el color de cabello diferente. ¡Te sigo insistiendo en que te pongas rubio! Aunque, como siempre, te rebeles jaja.<br><br>
+
+Wander, eres un amor de persona, un trabajador incansable y alguien que vive con pasión lo que hace. Si estás leyendo esto, dame un abrazo, bro, porque te quiero y te admiro muchísimo.</p>
                    </div>`
                 });
 
