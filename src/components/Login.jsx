@@ -224,7 +224,7 @@ Urpirio
                 document.getElementById('SL__Form').style.display = 'none';
                 document.getElementById('GroupStudent').style.display = 'flex';
                 document.getElementById('GroupStudent').innerHTML = `<h1 class = 'GSwelcome'>
-                 Welcome <span>${document.getElementById('Username').value}</span> to <span>G4</span></h1>`;
+                 Javier,<span> el impredecible </span></h1>`;
 
                 let D = document.createElement('button')
                 D.className = 'btnContinuar';
@@ -235,10 +235,17 @@ Urpirio
                     document.getElementById('SCartas').style.display = 'flex';
 
                     document.getElementById('SCartas').innerHTML = ` <div >
-            <h2>${document.getElementById('Username').value}</h2>
-            <p>Eres de esas personas que hace que cualquier momento se vuelva más divertido. Siempre tienes una broma lista para hacernos reír, aunque, hay que admitirlo, no siempre lo logras. Aun así, tu energía y tu buena onda son contagiosas. Nos compartes tus ideas y
-             haces más llevaderas hasta las clases más aburridas. ¡Sigue siendo el genio que eres en todo
-              lo que haces! Se te quiere.</p>
+            <p>¡Mierda, bro! No sé ni por dónde empezar. Son tantas cosas juntas que cuesta ponerlas en orden. Tienes demasiados talentos y cualidades que son increíbles y dignos de admirar.<br><br>
+
+Desde el primer día que hablé contigo, me sorprendió lo confiado que eras. ¡Wao, el men quería enamorar a una chica desde el inicio! XD. Sé que fue jodiendo, pero todavía me da mucha risa cuando lo recuerdo. Luego, con el tiempo, se notó tu nivel de cultura, siempre hablando de temas interesantes (y algunos medio turbios) con Sanmy.<br><br>
+
+De repente, sin darme cuenta, pasaste de ser un random —del que apenas confiaba o ni siquiera recordaba el nombre— a alguien importante y relevante en mi vida. La verdad, te aprecio un montón.<br><br>
+
+Apodado como el arrojador de embaradas y el rompebrazos del CTC, eres de esos que nunca se sabe con qué locura puede salir. Literalmente, ya ni me sorprendo de tus ocurrencias. Desde la maestra de inglés hasta las mujeres en general, te encanta molestarlas a niveles extraordinarios. A veces pienso que tienes mala suerte, pero luego pasa algo bueno y digo "naaa, pura casualidad".<br><br>
+
+En la música, bro, talento con cojones. Se te da increíblemente bien. Hasta dabas clases y tutorías, y cuando me lo contaste, me sorprendió demasiado. Tienes una voz de locutor, una facilidad para hablar en público y una manera de comunicar que es impresionante. Lo demostraste en varias ocasiones, pero una de las más épicas fue cuando diste clases de Comunicación Funcional en reemplazo de la maestra Luz Clara.<br><br>
+
+Eres alguien digno de admiración y alguien a quien le tengo mucho cariño. Se te quiere un montón, bro. Nunca cambies esa energía que te hace único. att: Urpirio</p>
                    </div>`
                 });
 
