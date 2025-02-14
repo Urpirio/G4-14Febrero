@@ -61,7 +61,7 @@ export default function Login() {
                 document.getElementById('SCartas__div').append(Btn);
                 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
             
         }else if(DataUser[1].Username == document.getElementById('Username').value){//Nashla
@@ -217,7 +217,7 @@ Urpirio
                 D.append(T)
                 document.getElementById('GroupStudent').append(D);
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[2].Username == document.getElementById('Username').value){//Javier
             if(DataUser[2].Password == document.getElementById('Password').value){
@@ -247,15 +247,14 @@ Urpirio
                 D.append(T)
                 document.getElementById('GroupStudent').append(D);
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[3].Username == document.getElementById('Username').value ){//Enmanuel
             if(DataUser[3].Password == document.getElementById('Password').value){
                 document.getElementById('SL__Form').style.display = 'none';
                 document.getElementById('GroupStudent').style.display = 'flex';
                 document.getElementById('GroupStudent').innerHTML = `<h1 class = 'GSwelcome'>
-                 Welcome <span>${document.getElementById('Username').value}</span> to <span>G4</span></h1>`;
-
+                 Batuce, <span>el rival que nunca elegí</span></h1>`;
                 let D = document.createElement('button')
                 D.className = 'btnContinuar';
 
@@ -265,11 +264,16 @@ Urpirio
                     document.getElementById('SCartas').style.display = 'flex';
 
                     document.getElementById('SCartas').innerHTML = ` <div >
-            <h2>${document.getElementById('Username').value}</h2>
-            <p>Señor Batuce, eres ese amigo indispensable que equilibra la crítica constructiva con el arte de molestar,
-             siempre con ingenio, empatía y oportunas ideas que hacen la diferencia; un hater de primera,
-              pero también un apoyo incondicional, alguien que sabe ayudar y hacer reír en igual medida, 
-            y aunque a veces seas insoportable(XDDDD), el mundo sería mucho más aburrido sin ti.</p>
+            <p>
+La primera vez que te vi, pensé que tenías 30 años. Te veías súper serio, poco amigable y con una cara que, sinceramente, daba miedo. Siempre con esa expresión de "no me hablen" y una actitud que imponía respeto (o miedo, más bien). Pero con el tiempo, te fuiste relajando, empezaste a soltar chistes y a fluir mucho más de lo que imaginé. De repente, te volviste el más simpático, el más buena onda, el niño santo del aula. Sorprendente, la verdad.<br><br>
+
+Luego, agarraste confianza conmigo y, sin preguntar, me volviste tu rival. Yo no tuve ni voz ni voto en esa decisión, pero bueno, aquí estamos, jaja. Nos seguimos riendo del "naa naa, es mentira", y ahora te burlas hasta de mi frase "la vida es una". A veces siento que te encanta llevarme la contraria solo por deporte, como si fuera un pasatiempo tuyo. Y lo peor es que lo disfrutas.<br><br>
+
+Eres ese amigo que equilibra la crítica constructiva con el arte de molestar. Siempre con ingenio, empatía y esas ideas oportunas que hacen la diferencia. Un hater de primera, pero también un apoyo incondicional. Sabes ayudar, motivar y hacer reír en igual medida. Siempre tienes un comentario sarcástico, pero también un consejo cuando hace falta.<br><br>
+
+Y aunque a veces seas insoportable (XDDDD), la verdad es que el mundo sería mucho más aburrido sin ti. Gracias por las risas, las discusiones sin sentido y por ser esa persona con la que se puede hablar de todo… aunque siempre termines queriendo ganar el debate.<br><br>
+
+En serio, Batuce, eres un personaje único. Sigue siendo así, porque, aunque nunca lo admitiré en voz alta, sí que vales la pena.</p>
                    </div>`
                 });
 
@@ -279,7 +283,7 @@ Urpirio
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[4].Username == document.getElementById('Username').value){//Yeremi
             if(DataUser[4].Password == document.getElementById('Password').value){
@@ -297,9 +301,17 @@ Urpirio
                     document.getElementById('SCartas').style.display = 'flex';
 
                     document.getElementById('SCartas').innerHTML = ` <div >
-            <h2>${document.getElementById('Username').value}</h2>
-            <p>LOCOOOOOO, ya es hora de un cambio de look. Quítate esa barba, dale un respiro a tu cara y córtate el pelo, que seguro ni recuerdas cómo te ves sin tanto cabello.
-             Un refresh nunca cae mal, quién sabe, capaz hasta te ves mejor sin ella. Dale, anímate, que no cuesta nada probar(Ronald Sabe Recortar).</p>
+
+            <p>Todavía recuerdo cuando nos conocimos jugando Free Fire y las partidas épicas que hacíamos. Eran simplemente extraordinarias, bellos momentos, la verdad. Eres una persona carismática, humilde y… ¡muy mala paga! Porque sí, todavía recuerdo que me debes dinero. PÁGAMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeee.<br><br>
+
+Pero bueno, continuando…PÁGAME.<br><br>
+
+Ahora sí. Yeremi, la verdad es que eres alguien especial para mí. Un amigo con el que pasé un tiempo sin hablar, y de repente, por cosas random de la vida, terminaste mudándote a Santo Domingo solo porque te dije: “Ven, vamos a entrar a este programa”. Y al final, lo logramos. Esas son cosas que solo se ven en las películas.<br><br>
+
+Ahora te veo todos los días, y te lo digo siempre: deja de jugar tanto y enfócate más en programar. Sé que puedes, y también sé que desde el inicio te has esforzado. A veces el proceso es lento, pero al final da sus frutos. Solo mira cómo has mejorado: ahora llegas más temprano (milagro) y, aunque sigues jugando mucho… Yeremi, en serio, deja de jugar esos juegos de lolis, jaja.<br><br>
+
+Ah, y ya es hora de recortarte el pelo y la barba, te ves feísimo. Haz ese cambio de estilo, no esperes a último momento para hacerlo.
+ att: Urpirio</p>
                    </div>`
                 });
 
@@ -309,7 +321,7 @@ Urpirio
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[5].Username == document.getElementById('Username').value){//Sanmy
             if(DataUser[5].Password == document.getElementById('Password').value){
@@ -345,7 +357,7 @@ Un abrazo, aunque sé que preferirías un chiste incómodo en su lugar. Att: Urp
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[6].Username == document.getElementById('Username').value){ //PedroMiguel
             if(DataUser[6].Password == document.getElementById('Password').value){
@@ -379,7 +391,7 @@ Un abrazo, aunque probablemente lo interrumpas con una pregunta random en cualqu
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[7].Username == document.getElementById('Username').value){//Pedro Amin
             if(DataUser[7].Password == document.getElementById('Password').value){
@@ -417,7 +429,7 @@ Un abrazo, pero sin tanto toque, por favor. Att: Urpirio</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[8].Username == document.getElementById('Username').value){//Ronald
             if(DataUser[8].Password == document.getElementById('Password').value){
@@ -453,7 +465,7 @@ Un abrazo, y sigue siendo tú. Att: Urpirio</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[9].Username == document.getElementById('Username').value){//Yohandy
             if(DataUser[9].Password == document.getElementById('Password').value){
@@ -492,7 +504,7 @@ Un abrazo, Yohandy, sigue siendo el niño con musa y con flow. Att:Urpirio</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[10].Username == document.getElementById('Username').value){//yerlina
             if(DataUser[10].Password == document.getElementById('Password').value){
@@ -528,7 +540,7 @@ Un abrazo, Yerlina. Sigue siendo tú. Att: Urpirio</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[11].Username == document.getElementById('Username').value){//Oliver
             if(DataUser[11].Password == document.getElementById('Password').value){
@@ -567,7 +579,7 @@ Un abrazo, Oliver. Sigue siendo tú. att: Urpirio</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[12].Username == document.getElementById('Username').value){//moises
             if(DataUser[12].Password == document.getElementById('Password').value){
@@ -609,7 +621,7 @@ Con aprecio, Urpirio.</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[13].Username == document.getElementById('Username').value){//Victor
             if(DataUser[13].Password == document.getElementById('Password').value){
@@ -647,7 +659,7 @@ Con aprecio, Urpirio.</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[14].Username == document.getElementById('Username').value){
             if(DataUser[14].Password == document.getElementById('Password').value){
@@ -687,7 +699,7 @@ Te admiro y eres alguien digno de admirar. Con respeto y aprecio, Urpirio.</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[15].Username == document.getElementById('Username').value){//genesis
             if(DataUser[15].Password == document.getElementById('Password').value){
@@ -723,7 +735,7 @@ Con mucho aprecio, Urpirio.</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[16].Username == document.getElementById('Username').value){//Johan
             if(DataUser[16].Password == document.getElementById('Password').value){
@@ -761,7 +773,7 @@ Con mucho aprecio, Urpirio</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[17].Username == document.getElementById('Username').value){//luz Clara
             if(DataUser[17].Password == document.getElementById('Password').value){
@@ -799,7 +811,7 @@ Con mucho respeto y gratitud, Urpirio</p>
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[18].Username == document.getElementById('Username').value){//Diego
             if(DataUser[18].Password == document.getElementById('Password').value){
@@ -835,7 +847,7 @@ Gracias, Diego, por inspirarme y por ayudarme a ver la programación con otros o
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+document.getElementById('ErrorPassword').style.display = 'flex';
             }
         }else if(DataUser[19].Username == document.getElementById('Username').value){//wander
             if(DataUser[19].Password == document.getElementById('Password').value){
@@ -874,9 +886,11 @@ Wander, eres un amor de persona, un trabajador incansable y alguien que vive con
                 document.getElementById('GroupStudent').append(D);
 
             }else{
-
+                document.getElementById('ErrorPassword').style.display = 'flex';
             }
-        }
+        }else{
+            document.getElementById('ErrorUser').style.display = 'flex'
+        };
         
         
         
@@ -893,8 +907,14 @@ Wander, eres un amor de persona, un trabajador incansable y alguien que vive con
                 <h2>San Valentín</h2>
             </div>
             <div className='SL__Form_div2'>
+                <div className='SL__Form_div2_d1'>
                 <input type="text" placeholder='Username' id='Username' />
+                <span id='ErrorUser'>El usuario no es correcto</span>
+                </div>
+                <div className='SL__Form_div2_d2'>
                 <input type='password' placeholder='Password' id='Password' />
+                <span id='ErrorPassword'>La contraseña no es correcta</span>
+                </div>
             </div>
             <div className='SL__Form_div3'>
                 <input type="submit" value="Sign In" />
