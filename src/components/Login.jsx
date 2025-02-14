@@ -179,7 +179,7 @@ No sé cuál será tu respuesta, pero pase lo que pase, quiero que sepas que seg
 Ah, y aunque todavía no entiendo cómo alguien puede no gustarle el aguacate ni cómo puedes ser tan mañosa con la comida… se te quiere y se te ama tal y como eres.<br><br>
 
 Con cariño,
-Urpirio Junior
+Urpirio
                                 </div>`;
                                
                                 let BtnContinuar= document.createElement('button');
