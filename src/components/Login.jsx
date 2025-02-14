@@ -143,7 +143,7 @@ export default function Login() {
                         CoraNala.addEventListener('click',()=>{
                             if(change== undefined){
                                 var Buscame = document.createElement('h3');
-                            var TextBuscame = document.createTextNode('Antes de seguir, Búscame. Asegúrate de que estoy justo frente a ti. Si lo estás, y solo si lo estás… entonces lee la carta.')
+                            var TextBuscame = document.createTextNode('')
                             Buscame.append(TextBuscame);
                             NalaElement.append(Buscame);
                             var BtnListo = document.createElement('button');
@@ -162,24 +162,9 @@ export default function Login() {
                                 CoraNala.remove();
                                 BtnListo.remove();
                                 NalaElement.innerHTML +=`<div class = 'NashlaCarta'>
-                                <b>Para Nashla Sena, alguien simplemente única❤️</b><br><br>
+                                <b>Para Nashla Sena, alguien simplemente única</b><br><br>
 
-Nashla, si me hubieran dicho el primer día que te vi que algún día escribiría esta carta, probablemente me habría reído. Nunca imaginé que llegaríamos a ser tan cercanos, mucho menos que llegaría a sentir algo tan especial por ti. Es extraño pensar en cómo solía verte antes y en lo diferente que es todo ahora. <br><br>
 
-Siempre supe que eras inteligente, ingeniosa y capaz de muchas cosas, pero con el tiempo, al hablar más contigo, me di cuenta de que hay mucho más en ti. Me sorprendieron tus medallas en ajedrez, tu amor por el anime, y hasta esa forma juguetona que tienes de ser, aunque sabes perfectamente cuándo ponerte seria. Admiro tu determinación, tu claridad al saber lo que quieres y tu manera de buscarlo hasta conseguirlo. Esas son cualidades que no todos tienen, y son parte de lo que te hace única. <br><br>
-
-Trabajar en equipo contigo es como completar la otra mitad. Cuando lo hacemos, siento más seguridad, como si supiera que las posibilidades de fallar fueran menores. De alguna manera, me complementas. Hay cosas en ti que admiro porque yo no las tengo, y verte ser así me inspira.<br><br>
-
-A lo largo del tiempo, sin darme cuenta, empecé a verte de otra manera. No sé en qué momento exacto pasó, pero pasó. Y ahora, simplemente lo sé: estoy enamorado de ti. Me encanta cuando te haces rizos, ese olor tan intenso que siento cada mañana cuando te acercas, y hasta esa manera en que a veces quieres romper la computadora cuando el código no compila. Admiro el esfuerzo que pones en entenderlo todo, la pasión que le pones a la programación, y ni hablar de la música. Desde el momento en que supe que tocabas el saxofón y otros instrumentos de viento, fue algo que me atrapó aún más.<br><br>
-
-Sé que probablemente ya has escuchado que me gustas, y sí, es completamente cierto. Me encantaría construir algo bonito contigo, conocerte más y seguir compartiendo momentos. Es por eso hoy viernes 14 de febrero quiero decirte todo esto en persona. Sí, sé que no es la idea más original declararse este día, pero no encontré otro momento que se sintiera tan significativo para hacerlo.<br><br>
-
-No sé cuál será tu respuesta, pero pase lo que pase, quiero que sepas que seguiré queriéndote, respetándote y apoyándote como hasta ahora. Eres alguien increíble, y eso no cambiará.<br><br>
-
-Ah, y aunque todavía no entiendo cómo alguien puede no gustarle el aguacate ni cómo puedes ser tan mañosa con la comida… se te quiere y se te ama tal y como eres.<br><br>
-
-Con cariño,
-Urpirio
                                 </div>`;
                                
                                 let BtnContinuar= document.createElement('button');
